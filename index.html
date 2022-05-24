@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <script language="JavaScript">
+        function Login(){ 
+            var user = document.getElementById("username").value            
+
+            var pass = document.getElementById("password").value
+
+            if (user=="cantik" && pass=="123"){
+              window.location.href="utama.html"
+            }else{
+                alert("Username dan password anda salah!");
+            }
+        }
+    </script>
+   <head>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   </head>
+
+<body>
+
+    <form>
+        <table width="225" cellpadding="4">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" id="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Login" onClick="Login()"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
